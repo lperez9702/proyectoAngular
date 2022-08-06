@@ -1,0 +1,26 @@
+<div class="container ">
+    <div class="card">
+        <div class="card-header">
+            <h3>Estudiantes</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Opciones</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let estudiante of estudiantes" class="text-center">
+                        <td>{{estudiante.id}}</td>
+                        <td>{{estudiante.name}}</td>
+                        <td>
+                            <button class="btn warning rounded">Editar</button>
+                            <button class="btn danger rounded" style="margin-left: 15px">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

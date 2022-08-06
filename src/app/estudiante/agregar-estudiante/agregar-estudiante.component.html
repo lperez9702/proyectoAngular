@@ -1,0 +1,16 @@
+<div class="container col-md-8">
+    <div class="card">
+        <div class="card-header">
+            <h3>Estudiantes</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="group">
+                    <label for="">Nombres</label>
+                    <input #nombre type="text" class="input">
+                </div>
+                <button (click)="guardarEstudiante(nombre.value)" class="btn info rounded">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
